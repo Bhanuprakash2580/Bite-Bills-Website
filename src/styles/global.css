@@ -1,0 +1,45 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Image optimization */
+  .bakery-image {
+    transition: transform 0.3s ease;
+  }
+
+  .bakery-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* Consistent aspect ratios for bakery images */
+  .aspect-bakery-card {
+    aspect-ratio: 1 / 1;
+  }
+
+  .aspect-bakery-hero {
+    aspect-ratio: 16 / 9;
+  }
+}

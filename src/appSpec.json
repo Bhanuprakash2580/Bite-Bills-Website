@@ -1,0 +1,220 @@
+{
+  "id": "9ba9b711-5f08-4aa6-8d85-30209198cb1b",
+  "initialPrompt": "Create a website inspired by https://www.zomato.com/",
+  "siteName": "zomato.com",
+  "brandBook": {
+    "tones": [
+      "Modern",
+      "Techy",
+      "Inviting",
+      "Efficient",
+      "Indulgent"
+    ],
+    "designStyle": {
+      "primaryStyle": [
+        "Techy"
+      ],
+      "supportingStyles": [
+        "Modern",
+        "Minimalist"
+      ]
+    },
+    "toneOfVoice": "Friendly, inviting, efficient, modern, and slightly indulgent.",
+    "graphicElements": {
+      "icons": "Bakery-themed icons (e.g., rolling pin, whisk, cupcake, cookie cutter) in a clean, modern, line-art style. Use primary or accent colors. Ensure consistency in stroke weight and style.",
+      "stickers": "",
+      "illustrations": "Whimsical, modern illustrations of cookies, cakes, and baking elements. Use the brand's color palette (pink, cream, chocolate brown) with dark mode contrast. Style should be flat or subtly textured, complementing the overall modern aesthetic."
+    },
+    "designSummary": "**The Sweet Grid: A Fusion of Zomato's Efficiency and Bakery Charm**\n\nThe Vision: To create a modern, intuitive food marketplace for cookies and cakes that feels both highly efficient and delightfully sweet. We're blending the robust, user-friendly architecture of Zomato with the warm, inviting aesthetic of a premium bakery. The design will prioritize clarity, speed, and visual appeal, making browsing and ordering a seamless, enjoyable experience.\n\n**Execution Blueprint:**\n1. Card-Based Foundation: All product and bakery listings will utilize a clean, card-based layout, ensuring scannability and visual appeal. Cards will have rounded corners and subtle depth.\n2. Spatial Rhythm: A consistent 8px base unit will govern all spacing, ensuring harmony and a sense of order across the interface. Generous padding will be used to create an airy, premium feel.\n3. Typographic Hierarchy: A clear typographic scale will guide the user's eye, with distinct styles for headings, subheadings, and body text, all rendered in modern, readable fonts.\n4. Interactive Polish: Smooth animations and subtle hover effects will be applied to interactive elements, enhancing user engagement without overwhelming the experience.\n5. Dual-Mode Design: A toggle for light and dark modes will be implemented, ensuring optimal readability and aesthetic appeal in any lighting condition, with a focus on the specified color palette.",
+    "layout": {
+      "grid": {
+        "margins": "Consistent margins around sections and elements, multiples of 8px.",
+        "padding": "Generous padding within cards and containers, multiples of 8px.",
+        "compositionApproach": "Clean card-based grid for listings, with asymmetrical elements and potential for overlapping in hero and promotional sections.",
+        "spacing": {
+          "gaps": "Base unit: 8px. All grid gaps are 24px (3x base unit).",
+          "rows": "Flexible row system based on content.",
+          "columns": "12-column grid system for flexibility.",
+          "compositionApproach": "Not specified"
+        }
+      },
+      "layoutDna": {
+        "contrastSpectrum": "High contrast between background and foreground elements, with accent colors providing visual pops.",
+        "densitySpectrum": "Moderate to high density in product listings, airy in hero and detail sections.",
+        "textVsImageEmphasis": "Strong emphasis on high-quality product imagery, with typography serving as clear, concise information carriers.",
+        "complexitySpectrum": "Clean and organized, with dynamic interactions and layered elements adding depth.",
+        "gridAlignmentSpectrum": "Intentionally Broken, to create visual tension and guide the eye through non-traditional pathways.",
+        "negativeSpaceUsage": "Generous negative space around cards and key elements to create a premium feel, balanced with efficient use of space in grids."
+      },
+      "heroSectionLayout": "**The Sweet Reveal**\nComposition (Tailwind Spec): Main container (h-screen grid place-items-center p-8). A large, high-resolution image of cookies and cakes as a background. Overlayed text: 'Indulge Your Sweetest Cravings' (text-7xl font-bold text-center). Below the headline, a search bar component.\nSignature Hook (Framer Motion Spec): The headline uses `variants` with `transition: { staggerChildren: 0.04 }`. Each letter `span` has a variant with `initial={{ opacity: 0, y: 20 }}` and `animate={{ opacity: 1, y: 0 }}`. The search bar appears with a subtle fade-in and slide-up effect after the headline."
+    },
+    "components": {
+      "images": "Layout Role: Full-bleed background with a fixed position to create a window effect on scroll. | Gallery Type: Dynamic Bento Grid: A mosaic of images where larger cells feature video on hover. Images are large, high-resolution, and focus on the texture and appeal of baked goods. Use lazy loading.",
+      "buttons": "Primary: background-color: #FFFFFF, color: #EF4F5F, border-radius: 32px, padding: 12px 24px, font-weight: 700. Secondary: background-color: transparent, color: #FFFFFF, border: 1px solid #FFFFFF, border-radius: 32px, padding: 12px 24px. Hover effects should be subtle color shifts or slight scale changes.",
+      "containers": "Method: Card, Style: background-color: #2A2A2A, border-radius: 16px, box-shadow: 0 8px 24px rgba(0,0,0,0.2). Use cream or pink backgrounds for specific sections like testimonials or newsletters."
+    },
+    "palette": {
+      "colors": {
+        "customColors": [
+          {
+            "name": "accentPink",
+            "value": "#F8BBD0"
+          },
+          {
+            "name": "cream",
+            "value": "#F5EFE6"
+          },
+          {
+            "name": "chocolateBrown",
+            "value": "#5D4037"
+          },
+          {
+            "name": "destructive",
+            "value": "#ff0000"
+          },
+          {
+            "name": "destructiveForeground",
+            "value": "#FFFFFF"
+          }
+        ],
+        "background": "#1C1C1C",
+        "secondary": "#E23744",
+        "foreground": "#FFFFFF",
+        "secondaryForeground": "#FFFFFF",
+        "primaryForeground": "#FFFFFF",
+        "primary": "#EF4F5F"
+      },
+      "paletteUsageGuide": "The primary color (#EF4F5F) and secondary color (#E23744) are used for key CTAs, links, and active states. The dark background (#1C1C1C) provides a sophisticated base, with primary foreground (#FFFFFF) for main text. Accent colors like pink (#F8BBD0), cream (#F5EFE6), and chocolate brown (#5D4037) are used for UI elements, cards, and illustrative purposes to evoke a bakery feel. Ensure high contrast for text on backgrounds.",
+      "paletteAccessibilityNotes": "Ensure all text elements have a minimum contrast ratio of 4.5:1 against their background. Primary and secondary colors should not be used alone to convey critical information. Test color combinations for accessibility, especially for users with color vision deficiencies."
+    },
+    "typography": {
+      "headings": {
+        "font": {
+          "fontFamily": "lexend",
+          "role": "headings",
+          "fontJustification": ""
+        },
+        "headingsAccessibilityNotes": "Headings must be semantically correct (H1, H2, etc.) to aid screen readers. Ensure sufficient contrast and legible font sizes.",
+        "headingsSimilarFonts": [],
+        "headingsUsageGuide": "Headings should be used for titles and section headers. Maintain a clear hierarchy using different font sizes and weights. Ensure headings are concise and descriptive."
+      },
+      "paragraphs": {
+        "font": {
+          "fontFamily": "lexend",
+          "role": "paragraphs",
+          "fontJustification": ""
+        },
+        "paragraphsUsageGuide": "Paragraphs are for body text, descriptions, and longer content. Maintain consistent line height and spacing for readability. Avoid excessively long lines of text.",
+        "paragraphsSimilarFonts": [],
+        "paragraphsAccessibilityNotes": "Body text should be at least 16px for readability. Ensure adequate line height (1.5x font size) and letter spacing for comfortable reading."
+      },
+      "customFontFamilies": {},
+      "fontSizes": [
+        {
+          "name": "xs",
+          "size": "0.75rem",
+          "lineHeight": "1",
+          "letterSpacing": "0.05em",
+          "fontWeight": "400"
+        },
+        {
+          "name": "sm",
+          "size": "0.875rem",
+          "lineHeight": "1.25",
+          "letterSpacing": "0.05em",
+          "fontWeight": "400"
+        },
+        {
+          "name": "base",
+          "size": "1rem",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.05em",
+          "fontWeight": "400"
+        },
+        {
+          "name": "lg",
+          "size": "1.125rem",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.05em",
+          "fontWeight": "500"
+        },
+        {
+          "name": "xl",
+          "size": "1.25rem",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.05em",
+          "fontWeight": "500"
+        },
+        {
+          "name": "2xl",
+          "size": "1.5rem",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.05em",
+          "fontWeight": "600"
+        },
+        {
+          "name": "3xl",
+          "size": "1.875rem",
+          "lineHeight": "1.2",
+          "letterSpacing": "0.05em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "4xl",
+          "size": "2.25rem",
+          "lineHeight": "1.2",
+          "letterSpacing": "0.05em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "5xl",
+          "size": "3rem",
+          "lineHeight": "1.1",
+          "letterSpacing": "0.05em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "6xl",
+          "size": "3.75rem",
+          "lineHeight": "1.1",
+          "letterSpacing": "0.05em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "7xl",
+          "size": "4.5rem",
+          "lineHeight": "1.1",
+          "letterSpacing": "0.05em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "8xl",
+          "size": "6rem",
+          "lineHeight": "1",
+          "letterSpacing": "0.05em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "9xl",
+          "size": "8rem",
+          "lineHeight": "1",
+          "letterSpacing": "0.05em",
+          "fontWeight": "700"
+        }
+      ],
+      "welcomeSectionTypography": {
+        "placement": "Centered on hero banner, large and impactful.",
+        "implementation": "Utilize the largest font sizes (e.g., 7xl, 8xl) with bold weights. Ensure high contrast against the background image. Consider subtle text shadows or outlines for legibility."
+      }
+    },
+    "originImagesUrls": []
+  },
+  "attachments": {
+    "contentImagesUrls": [],
+    "inspirationImagesUrls": [
+      "https://wixmp-c562ea68f10846b458285ce5.wixmp.com/scraped-screenshots/screenshot-1773512031283.webp"
+    ]
+  },
+  "status": "READY",
+  "plan": "\n\n```json\n{\n  \"sections\": [\n    {\n      \"id\": \"overview\",\n      \"title\": \"## Overview\",\n      \"content\": \"A modern food marketplace website focused on cookies and cakes, featuring product browsing, search, filtering, user accounts, shopping cart, and order management.\"\n    },\n    {\n      \"id\": \"key-features\",\n      \"title\": \"## Key features\",\n      \"content\": \"- **Product Listing**: Browse all available cookies and cakes in a grid layout.\\n- **Product Detail View**: View detailed information about a specific product including images, description, ingredients, and price.\\n- **Filtering / Search**: Filter products by category, price range, rating, and search by keywords.\\n- **User Authentication**: Sign up and log in to access personalized features.\\n- **Shopping Cart**: Add products to cart, update quantities, and proceed to checkout.\\n- **Order Management**: View order history and track past purchases.\\n- **Product Reviews**: Submit and view ratings and reviews for products.\\n- **Newsletter Subscription**: Subscribe to receive updates and promotions.\",\n      \"metadata\": [\n        { \"id\": \"product-listing\", \"name\": \"Product Listing\" },\n        { \"id\": \"product-detail-view\", \"name\": \"Product Detail View\" },\n        { \"id\": \"filtering-search\", \"name\": \"Filtering / Search\" },\n        { \"id\": \"user-authentication\", \"name\": \"User Authentication\" },\n        { \"id\": \"shopping-cart\", \"name\": \"Shopping Cart\" },\n        { \"id\": \"order-management\", \"name\": \"Order Management\" },\n        { \"id\": \"product-reviews\", \"name\": \"Product Reviews\" },\n        { \"id\": \"newsletter-subscription\", \"name\": \"Newsletter Subscription\" }\n      ]\n    },\n    {\n      \"id\": \"structure\",\n      \"title\": \"## Structure\",\n      \"content\": \"- **Header (Reusable)**: Contains site logo, navigation menu, search bar, and user account access.\\n- **Footer (Reusable)**: Contains links to important pages, social media, and newsletter subscription form.\\n- **Home Page**: Features hero banner, search bar, product categories, trending products, top-rated bakeries, featured desserts carousel, and customer testimonials.\\n- **Products Page**: Displays product listing with filtering and search options, and hosts product detail views.\\n- **Cart Page**: Shows shopping cart contents with quantity controls and checkout button.\\n- **Account Page**: User dashboard with profile information, order history, favorite products, and saved addresses.\\n- **Checkout Page**: Secure checkout form with delivery address, payment options, and order confirmation.\"\n    }\n  ],\n  \"apps\": [\n    {\n      \"id\": \"wix-cms\",\n      \"keyFeatures\": [\n        { \"id\": \"product-listing\", \"name\": \"Product Listing\" },\n        { \"id\": \"product-detail-view\", \"name\": \"Product Detail View\" },\n        { \"id\": \"filtering-search\", \"name\": \"Filtering / Search\" },\n        { \"id\": \"user-authentication\", \"name\": \"User Authentication\" },\n        { \"id\": \"shopping-cart\", \"name\": \"Shopping Cart\" },\n        { \"id\": \"order-management\", \"name\": \"Order Management\" },\n        { \"id\": \"product-reviews\", \"name\": \"Product Reviews\" },\n        { \"id\": \"newsletter-subscription\", \"name\": \"Newsletter Subscription\" }\n      ]\n    }\n  ],\n  \"version\": \"4.0.1\"\n}\n```"
+}
