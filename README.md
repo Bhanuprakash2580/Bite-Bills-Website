@@ -1,6 +1,6 @@
 # 🍔 Bite Bills — Food Ordering Web App
 
-![Bite Bills Banner] "C:\Users\bhanu\OneDrive\Pictures\Screenshots\Screenshot 2026-03-19 211637.png"
+Bite Bills Banner <img width="229" height="70" alt="Screenshot 2026-03-19 211637" src="https://github.com/user-attachments/assets/4cb39e7a-3385-4075-a252-ab2cd602a6db" />
 
 > **Every bite tells a story — baked fresh, made with love, just for you.**
 
@@ -17,21 +17,26 @@ A modern full-stack food ordering web application built with React, Vite, Supaba
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page] "C:\Users\bhanu\OneDrive\Pictures\Screenshots\Screenshot 2026-03-19 211209.png"
-> Replace with your actual screenshot — add images to a `/screenshots` folder in your project
+Home Page
+<img width="1280" height="740" alt="Screenshot 2026-03-19 211209" src="https://github.com/user-attachments/assets/65b8eab3-2c2b-4df9-9362-4cc0bbdf5f30" />
 
 ### 🛒 Cart & Checkout
-![Checkout Page] "C:\Users\bhanu\OneDrive\Pictures\Screenshots\Screenshot 2026-03-19 211417.png"
+Checkout Page
+<img width="2558" height="1479" alt="Screenshot 2026-03-19 211417" src="https://github.com/user-attachments/assets/c9656b51-f0b0-4afc-b1d4-e6ce81ee8f1c" />
 
 ### 👤 Profile & My Orders
-![Profile Page] "C:\Users\bhanu\OneDrive\Pictures\Screenshots\Screenshot 2026-03-19 211323.png"
+Profile Page
+<img width="2556" height="1479" alt="Screenshot 2026-03-19 211323" src="https://github.com/user-attachments/assets/a7721083-f39a-43df-8158-424ff41bb9df" />
+
 
 ### 🔐 Login / Signup
-![Login Page] "C:\Users\bhanu\OneDrive\Pictures\Screenshots\Screenshot 2026-03-19 211435.png"
+Login Page
+<img width="2559" height="1473" alt="Screenshot 2026-03-19 211435" src="https://github.com/user-attachments/assets/154a3667-a5fd-426b-b723-95d1eaa4eeba" />
+
 
 ### 🛠️ Admin Dashboard
-![Admin Dashboard] "C:\Users\bhanu\OneDrive\Pictures\Screenshots\Screenshot 2026-03-19 211503.png"
----
+Admin Dashboard
+<img width="2559" height="1477" alt="Screenshot 2026-03-19 211503" src="https://github.com/user-attachments/assets/7cdabf04-f8ce-4cfa-9084-75fb3aacc1a0" />
 
 ## ✨ Features
 
