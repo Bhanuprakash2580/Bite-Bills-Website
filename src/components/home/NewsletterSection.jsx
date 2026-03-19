@@ -5,34 +5,22 @@ import { toast } from 'react-hot-toast'
 
 export default function NewsletterSection() {
   const [email, setEmail] = useState('')
-  const [loading, setLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [subscribed, setSubscribed] = useState(false)
 
   const handleSubscribe = async (e) => {
     e.preventDefault()
     if (!email) return
-
-    setLoading(true)
-    try {
-      const { error } = await supabase
-        .from('newsletter')
-        .insert([{ email }])
-
-      if (error) {
-        if (error.code === '23505') { // unique violation
-          toast.success("You're already on our list! 🎉")
-        } else {
-          throw error
-        }
-      } else {
-        toast.success("Welcome to the Bite Bills family! 🍪")
-        setEmail('')
-      }
-    } catch (error) {
-      toast.error("Oops! Something went wrong. Try again later.")
-      console.error(error)
-    } finally {
-      setLoading(false)
-    }
+    
+    setIsLoading(true)
+    
+    // Simulate API call
+    setTimeout(() => {
+      setIsLoading(false)
+      setSubscribed(true)
+      setEmail('')
+      toast.success("Welcome to the Bite Bills Squad! 🍪")
+    }, 1500)
   }
 
   return (
@@ -57,23 +45,34 @@ export default function NewsletterSection() {
             Join the waitlist for new flavors, secret menus, and exclusive drops before anyone else.
           </p>
 
-          <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              required
-              className="flex-1 px-6 py-4 rounded-full border-2 border-darkBg/20 bg-goldLight/20 focus:bg-white focus:border-darkBg outline-none placeholder:text-darkBg/50 text-darkBg font-medium transition-all shadow-inner"
-            />
-            <button
-              type="submit"
-              disabled={loading}
-              className="px-8 py-4 rounded-full bg-darkBg text-gold font-bold hover:bg-black transition-colors disabled:opacity-70 whitespace-nowrap shadow-xl"
+          {subscribed ? (
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="bg-darkBg/10 p-8 rounded-2xl border-2 border-darkBg/20"
             >
-              {loading ? 'Joining...' : 'Subscribe'}
-            </button>
-          </form>
+              <h3 className="text-2xl font-bold mb-2">You're on the list! 🎉</h3>
+              <p className="font-medium">Check your inbox soon for something sweet.</p>
+            </motion.div>
+          ) : (
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
+                required
+                className="flex-1 px-6 py-4 rounded-full border-2 border-darkBg/20 bg-goldLight/20 focus:bg-white focus:border-darkBg outline-none placeholder:text-darkBg/50 text-darkBg font-medium transition-all shadow-inner"
+              />
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="px-8 py-4 rounded-full bg-darkBg text-gold font-bold hover:bg-black transition-colors disabled:opacity-70 whitespace-nowrap shadow-xl"
+              >
+                {isLoading ? 'Joining...' : 'Subscribe'}
+              </button>
+            </form>
+          )}
           <p className="mt-4 text-xs opacity-60 font-medium">No spam. Only warm, gooey cookie news.</p>
         </motion.div>
       </div>

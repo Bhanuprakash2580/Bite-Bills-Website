@@ -16,16 +16,42 @@ export function useAuth() {
     // Listen for auth changes
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null, session)
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      console.log('Auth event:', event, session?.user?.email)
+      
+      if (session?.user) {
+        setUser(session.user, session)
+      } else {
+        setUser(null, null)
+      }
+      
       setLoading(false)
     })
 
     return () => subscription.unsubscribe()
   }, [setUser, setLoading])
 
-  const login = async (email, password) => {
+  const loginWithGoogle = async () => {
     try {
+      setLoading(true)
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: `${window.location.origin}/auth/callback`
+        }
+      })
+      if (error) throw error
+    } catch (error) {
+      toast.error(error.message)
+      console.error(error)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const loginWithEmail = async (email, password) => {
+    try {
+      setLoading(true)
       const { data, error } = await supabase.auth.signInWithPassword({ email, password })
       if (error) throw error
       toast.success('Welcome back!')
@@ -33,29 +59,36 @@ export function useAuth() {
     } catch (error) {
       toast.error(error.message)
       return { data: null, error }
+    } finally {
+      setLoading(false)
     }
   }
 
-  const signup = async (email, password, metadata = {}) => {
+  const signupWithEmail = async (email, password, metadata = {}) => {
     try {
+      setLoading(true)
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
         options: { data: metadata }
       })
       if (error) throw error
-      toast.success('Account created successfully!')
+      toast.success('Check your email for confirmation!')
       return { data, error: null }
     } catch (error) {
       toast.error(error.message)
       return { data: null, error }
+    } finally {
+      setLoading(false)
     }
   }
 
   const logout = async () => {
     try {
-      await signOut()
+      await supabase.auth.signOut()
+      localStorage.removeItem('isAdmin')
       toast.success('Logged out successfully')
+      window.location.href = '/'
     } catch (error) {
       toast.error('Error logging out')
     }
@@ -67,8 +100,11 @@ export function useAuth() {
     loading,
     isAdmin,
     isAuthenticated: !!user,
-    login,
-    signup,
+    email: user?.email,
+    name: user?.user_metadata?.full_name || user?.email?.split('@')[0],
+    loginWithGoogle,
+    loginWithEmail,
+    signupWithEmail,
     logout
   }
 }

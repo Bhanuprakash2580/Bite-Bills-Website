@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useAuth } from '../../hooks/useAuth'
 
 export default function LoginForm({ onSuccess }) {
-  const { login } = useAuth()
+  const { loginWithEmail } = useAuth()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
@@ -10,7 +10,7 @@ export default function LoginForm({ onSuccess }) {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
-    const { error } = await login(email, password)
+    const { error } = await loginWithEmail(email, password)
     if (!error) {
       onSuccess?.()
     }
@@ -26,7 +26,7 @@ export default function LoginForm({ onSuccess }) {
           required 
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full bg-darkBg2 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1"
+          className="w-full bg-darkBg border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1 transition-all"
         />
       </div>
       <div>
@@ -36,7 +36,7 @@ export default function LoginForm({ onSuccess }) {
           required 
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full bg-darkBg2 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1"
+          className="w-full bg-darkBg border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1 transition-all"
         />
       </div>
       

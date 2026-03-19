@@ -5,13 +5,13 @@ import ProductGrid from '../components/products/ProductGrid'
 import ProductFilters from '../components/products/ProductFilters'
 import { useProducts } from '../hooks/useProducts'
 
-export default function ShopPage() {
+export default function ShopPage({ sort: initialSort }) {
   const { products, loading } = useProducts()
   const location = useLocation()
   
   const [activeCategory, setActiveCategory] = useState('all')
   const [searchQuery, setSearchQuery] = useState('')
-  const [sortBy, setSortBy] = useState('featured')
+  const [sortBy, setSortBy] = useState(initialSort || 'featured')
 
   // Parse URL query params on mount
   useEffect(() => {
@@ -21,7 +21,8 @@ export default function ShopPage() {
     
     if (categoryQuery) setActiveCategory(categoryQuery)
     if (sortQuery) setSortBy(sortQuery)
-  }, [location.search])
+    else if (initialSort) setSortBy(initialSort)
+  }, [location.search, initialSort])
 
   const categories = useMemo(() => {
     if (!products) return []
@@ -72,8 +73,8 @@ export default function ShopPage() {
   return (
     <>
       <Helmet>
-        <title>Order Cookies Online | Bite Bills</title>
-        <meta name="description" content="Shop the best freshly baked cookies, brownies, and cupcakes." />
+        <title>Order Fresh Cakes & Cookies | Bite Bills</title>
+        <meta name="description" content="Bite Bills: Pure Veg, Eggless Cakes & Cookies. Order online for fresh delivery!" />
       </Helmet>
 
       <main className="bg-darkBg min-h-screen pt-28 pb-24 text-softWhite">
@@ -81,7 +82,7 @@ export default function ShopPage() {
           
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-syne font-bold mb-4">
-              All Treats 🍪
+              Our Fresh Treats 🎂
             </h1>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
               Baked fresh. Delivered hot. Exactly how they should be.

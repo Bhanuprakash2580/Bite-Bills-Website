@@ -13,9 +13,9 @@ export default defineConfig({
       },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Bite Bills',
-        short_name: 'BiteBills',
-        description: 'Fresh cookies delivered to your door within 40km',
+        name: 'Nandipet’s Favorite Bakery',
+        short_name: 'NandipetFav',
+        description: 'Fresh eggless cakes and cookies in Nandipet',
         theme_color: '#1A0F0A',
         background_color: '#FFF8F2',
         display: 'standalone',

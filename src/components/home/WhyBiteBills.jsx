@@ -13,8 +13,9 @@ export default function WhyBiteBills() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <h2 className="text-4xl md:text-5xl font-syne font-bold mb-6">
-              Why Bite Bills?
+              Why Choose Us?
             </h2>
+            <p className="text-xl text-gold font-bold mb-8 italic">Nandipet’s Favorite Bakery</p>
             <div className="space-y-8">
               <div>
                 <h4 className="text-xl font-syne font-bold text-choco mb-2">1. Baked Fresh on Order</h4>
@@ -59,8 +60,8 @@ export default function WhyBiteBills() {
               alt="Chocolate stretch" 
               className="rounded-2xl w-full h-80 object-cover shadow-xl"
             />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gold text-darkBg w-32 h-32 rounded-full flex items-center justify-center font-bold font-syne text-xl text-center shadow-2xl border-4 border-softWhite rotate-12">
-              100% Eggless
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gold text-darkBg w-36 h-36 rounded-full flex items-center justify-center font-bold font-syne text-sm text-center shadow-2xl border-4 border-softWhite rotate-12 p-3">
+              100% Pure Veg & Eggless 🥦
             </div>
           </motion.div>
         </div>

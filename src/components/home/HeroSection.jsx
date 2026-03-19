@@ -38,17 +38,17 @@ export default function HeroSection() {
           {/* Headline */}
           <motion.h1 
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-            className="text-5xl md:text-7xl lg:text-8xl font-syne font-bold tracking-tighter leading-[1.1] mb-6"
+            className="text-5xl md:text-7xl lg:text-8xl font-syne font-bold tracking-tight text-white mb-6 leading-[0.9]"
           >
-            Cookies that <span className="block text-gold">absolutely SLAP 🔥</span>
+            Cookies that <span className="text-gold">absolutely</span> <br/> SLAP
           </motion.h1>
 
           {/* Subheadline */}
           <motion.p 
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-            className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10"
+            className="text-lg md:text-xl text-white/70 max-w-xl mx-auto mb-10 leading-relaxed font-medium"
           >
-            Handcrafted fresh. Delivered straight to your door within {BUSINESS_CONFIG.delivery.maxRadiusKm}km 🚀
+            Every bite tells a story — baked fresh, made with love, just for you. 🍪✨
           </motion.p>
 
           {/* CTA Buttons */}

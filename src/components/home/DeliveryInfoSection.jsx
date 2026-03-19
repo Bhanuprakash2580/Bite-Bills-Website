@@ -31,32 +31,32 @@ export default function DeliveryInfoSection() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl md:text-5xl font-syne font-bold mb-6">
-          We Deliver Within {BUSINESS_CONFIG.delivery.maxRadiusKm}km 🚚
+          Fresh Delivery to Your Door 🚚
         </h2>
         <p className="text-lg text-white/70 mb-12">
-          Baked fresh when you order. Delivered piping hot to your doorstep.
+          Baked fresh when you order. Delivered straight to your doorstep across Nandipet.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           <div className="bg-darkBg2 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition-colors">
             <div className="text-3xl mb-3">📍</div>
-            <h4 className="font-syne font-bold text-lg text-cream mb-1">0–{BUSINESS_CONFIG.delivery.freeDeliveryKm} km</h4>
+            <h4 className="font-syne font-bold text-lg text-cream mb-1">Nandipet Town</h4>
             <p className="text-gold font-bold">FREE Delivery</p>
           </div>
           <div className="bg-darkBg2 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition-colors">
             <div className="text-3xl mb-3">🛵</div>
-            <h4 className="font-syne font-bold text-lg text-cream mb-1">{BUSINESS_CONFIG.delivery.freeDeliveryKm}–20 km</h4>
-            <p className="text-white/60 text-sm">₹{BUSINESS_CONFIG.delivery.perKmCharge}/km</p>
+            <h4 className="font-syne font-bold text-lg text-cream mb-1">Within 5 km</h4>
+            <p className="text-gold font-bold text-sm">₹0 Charges</p>
           </div>
           <div className="bg-darkBg2 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition-colors">
             <div className="text-3xl mb-3">🚗</div>
-            <h4 className="font-syne font-bold text-lg text-cream mb-1">20–40 km</h4>
+            <h4 className="font-syne font-bold text-lg text-cream mb-1">5–15 km</h4>
             <p className="text-white/60 text-sm">₹{BUSINESS_CONFIG.delivery.perKmCharge}/km</p>
           </div>
-          <div className="bg-darkBg2 border border-white/10 rounded-xl p-6 opacity-60">
-            <div className="text-3xl mb-3">❌</div>
-            <h4 className="font-syne font-bold text-lg text-cream mb-1">40+ km</h4>
-            <p className="text-white/60 text-sm tracking-tighter">Outside Zone</p>
+          <div className="bg-darkBg2 border border-white/10 rounded-xl p-6 opacity-80">
+            <div className="text-3xl mb-3">📍</div>
+            <h4 className="font-syne font-bold text-lg text-cream mb-1">Pick Up</h4>
+            <p className="text-white/60 text-sm">From Our Store</p>
           </div>
         </div>
 
@@ -117,7 +117,7 @@ export default function DeliveryInfoSection() {
                    <div className="text-red-600 text-xl">❌</div>
                    <div>
                      <p className="text-red-800 font-bold">Sorry, we can't deliver here</p>
-                     <p className="text-red-700 text-sm mt-1">{error || 'Outside our 40km delivery radius.'}</p>
+                     <p className="text-red-700 text-sm mt-1">{error || 'Outside our local delivery radius.'}</p>
                      <p className="text-red-700 text-sm mt-2 font-medium">You can still order online and Pick Up from our store — Free!</p>
                      <button onClick={handleReset} className="text-xs text-red-600 underline mt-2">Check another</button>
                    </div>

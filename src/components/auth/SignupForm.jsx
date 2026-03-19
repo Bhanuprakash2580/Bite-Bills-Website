@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useAuth } from '../../hooks/useAuth'
 
 export default function SignupForm({ onSuccess }) {
-  const { signup } = useAuth()
+  const { signupWithEmail } = useAuth()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -11,7 +11,7 @@ export default function SignupForm({ onSuccess }) {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
-    const { error } = await signup(email, password, { full_name: name })
+    const { error } = await signupWithEmail(email, password, { full_name: name })
     if (!error) {
       onSuccess?.()
     }
@@ -27,7 +27,7 @@ export default function SignupForm({ onSuccess }) {
           required 
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full bg-darkBg2 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1"
+          className="w-full bg-darkBg border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1 transition-all"
         />
       </div>
       <div>
@@ -37,7 +37,7 @@ export default function SignupForm({ onSuccess }) {
           required 
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full bg-darkBg2 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1"
+          className="w-full bg-darkBg border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1 transition-all"
         />
       </div>
       <div>
@@ -48,7 +48,7 @@ export default function SignupForm({ onSuccess }) {
           minLength={6}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full bg-darkBg2 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1"
+          className="w-full bg-darkBg border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold mt-1 transition-all"
         />
       </div>
       

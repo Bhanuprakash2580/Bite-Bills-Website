@@ -3,18 +3,16 @@ import HeroSection from '../components/home/HeroSection'
 import FeatureStrip from '../components/home/FeatureStrip'
 import BestSellers from '../components/home/BestSellers'
 import WhyBiteBills from '../components/home/WhyBiteBills'
-import HowToOrder from '../components/home/HowToOrder'
-import DeliveryInfoSection from '../components/home/DeliveryInfoSection'
 import SocialOrderSection from '../components/home/SocialOrderSection'
 import NewsletterSection from '../components/home/NewsletterSection'
-// import ReviewsSection from '../components/home/ReviewsSection' // REVIEWS DISABLED FOR LAUNCH
+import ReviewsSection from '../components/home/ReviewsSection'
 
 export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Bite Bills | Fresh Cookies Delivered to Your Door</title>
-        <meta name="description" content="Handcrafted, premium cookies baked fresh on order. Free delivery within 5km of our bakery!" />
+        <title>Nandipet’s Favorite Bakery | Fresh Eggless Cakes & Cookies</title>
+        <meta name="description" content="Nandipet’s favorite destination for premium eggless cakes and hand-crafted cookies. Baked fresh on order in Nizamabad." />
         <script type="application/ld+json">
           {`
             {
@@ -22,8 +20,8 @@ export default function HomePage() {
               "@type": "Bakery",
               "name": "Bite Bills",
               "servesCuisine": "Bakery",
-              "areaServed": "40km radius",
-              "telephone": "+91 XXXXXXXXXX"
+              "areaServed": "Nizamabad",
+              "telephone": "+91 7288039532"
             }
           `}
         </script>
@@ -34,10 +32,8 @@ export default function HomePage() {
         <FeatureStrip />
         <BestSellers />
         <WhyBiteBills />
-        <HowToOrder />
-        <DeliveryInfoSection />
         <SocialOrderSection />
-        {/* <ReviewsSection /> */}
+        <ReviewsSection />
         <NewsletterSection />
       </main>
     </>

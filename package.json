@@ -16,7 +16,6 @@
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
     "@radix-ui/react-avatar": "^1.0.4",
-    "@radix-ui/react-badge": "^1.0.4",
     "@radix-ui/react-button": "^1.0.4",
     "@radix-ui/react-calendar": "^1.0.1",
     "@radix-ui/react-card": "^1.0.1",
@@ -106,8 +105,5 @@
     "typescript": "^5.2.2",
     "vite": "^5.1.0",
     "vite-plugin-pwa": "^0.19.0"
-  },
-  "scripts": {
-  "build": "npm install --force && next build"
-  }  
+  }
 }

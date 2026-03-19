@@ -3,7 +3,7 @@ import { CheckCircle2, MessageCircle } from 'lucide-react'
 import { BUSINESS_CONFIG } from '../../constants/businessConfig'
 
 export default function OrderSuccess({ orderId }) {
-  const whatsappMsg = encodeURIComponent(`Hi Bite Bills! I just placed order ${orderId}. Can I get an update?`)
+  const whatsappMsg = encodeURIComponent(`Hi! I just placed order ${orderId} on Bite Bills. Can I get an update?`)
 
   return (
     <div className="min-h-[70vh] flex items-center justify-center">

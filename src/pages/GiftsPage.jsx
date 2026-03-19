@@ -12,7 +12,7 @@ export default function GiftsPage() {
     <>
       <Helmet>
         <title>Gift Boxes | Bite Bills</title>
-        <meta name="description" content="Send the perfect gift with a customizable box of Bite Bills baked treats." />
+        <meta name="description" content="Send the perfect gift with a customizable box of Nandipet’s Favorite treats." />
       </Helmet>
 
       <main className="bg-darkBg min-h-screen pt-28 pb-24 text-softWhite">
@@ -20,10 +20,10 @@ export default function GiftsPage() {
           
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-syne font-bold mb-4">
-              Give the Gift of Cookies 🎁
+              Gifts & Combos 🎁
             </h1>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
-              Birthdays, anniversaries, or just because. A box of Bite Bills is the ultimate care package.
+              From birthday surprises to secret santa, our assorted gift boxes are the perfect way to say "I care." Every box is packed fresh with a lot of love.
             </p>
           </div>
 

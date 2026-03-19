@@ -1,28 +1,28 @@
 export const BUSINESS_CONFIG = {
   name: "Bite Bills",
-  tagline: "Cookies that hit different 🍪",
-  phone: "+91 XXXXXXXXXX",           // owner fills this
-  whatsapp: "+91 XXXXXXXXXX",        // WhatsApp business number
-  instagram: "bitebills",            // Instagram handle (no @)
+  tagline: "Fresh Eggless Cakes & Cookies 🎂",
+  phone: "7288039532",
+  whatsapp: "917288039532",
+  instagram: "bitebills",
   email: "hello@bitebills.in",
-  address: "Your Shop Address, City, Pincode",
+  address: "Nizamabad, Telangana, India",
   storeLocation: {
-    lat: 17.3850,                    // UPDATE with actual store coordinates
-    lng: 78.4867                     // UPDATE with actual store coordinates
+    lat: 18.6725,                    // Nizamabad coordinates
+    lng: 78.0941
   },
   delivery: {
-    maxRadiusKm: 40,
+    maxRadiusKm: 100,
     freeDeliveryKm: 5,
-    perKmCharge: 10,                 // ₹10 per km after 5km
+    perKmCharge: 10,
     minimumOrderAmount: 299
   },
   socials: {
     instagram: "https://instagram.com/bitebills",
-    whatsapp: "https://wa.me/91XXXXXXXXXX?text=Hi! I want to order from Bite Bills 🍪",
+    whatsapp: "https://wa.me/917288039532?text=Hi! I want to order from Bite Bills 🎂",
     facebook: "",
     youtube: ""
   },
   razorpay: {
-    keyId: import.meta.env.VITE_RAZORPAY_KEY_ID
+    keyId: import.meta.env.VITE_RAZORPAY_KEY_ID || 'rzp_test_placeholder'
   }
 }

@@ -200,7 +200,7 @@ export default function ProductDetailPage() {
                   <p className="text-green-400 text-sm font-medium">✅ We deliver to you! Charge: {chargeLabel}</p>
                 )}
                 {isEligible === false && (
-                  <p className="text-red-400 text-sm font-medium">❌ Outside 40km delivery radius. Pickup available.</p>
+                  <p className="text-red-400 text-sm font-medium">❌ Outside local delivery radius. Pickup available.</p>
                 )}
               </div>
 

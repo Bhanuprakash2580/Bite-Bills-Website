@@ -14,7 +14,7 @@ export default function Footer() {
               Bite Bills 🍪
             </h2>
             <p className="text-sm">
-              Handcrafted cookies baked on order. Delivered within {BUSINESS_CONFIG.delivery.maxRadiusKm}km.
+              Real ingredients. Real passion. Nizamabad’s favorite cookies and eggless cakes baked fresh on order.
             </p>
             <div className="flex space-x-4 pt-4">
               <a href={BUSINESS_CONFIG.socials.instagram} target="_blank" rel="noreferrer" className="text-white hover:text-[#E1306C] transition-colors">
@@ -23,56 +23,42 @@ export default function Footer() {
               <a href={BUSINESS_CONFIG.socials.whatsapp} target="_blank" rel="noreferrer" className="text-white hover:text-[#25D366] transition-colors">
                 <FaWhatsapp className="w-6 h-6" />
               </a>
-              {BUSINESS_CONFIG.socials.facebook && (
-                 <a href={BUSINESS_CONFIG.socials.facebook} target="_blank" rel="noreferrer" className="text-white hover:text-[#1877F2] transition-colors">
-                   <FaFacebook className="w-6 h-6" />
-                 </a>
-              )}
             </div>
           </div>
 
           {/* Shop Col */}
           <div>
-            <h3 className="font-syne font-bold text-lg text-white mb-6">Shop</h3>
+            <h3 className="font-syne font-bold text-lg text-white mb-6">Explore</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/collections/all?category=cookies" className="hover:text-gold transition-colors">Cookies</Link></li>
-              <li><Link to="/collections/gifts" className="hover:text-gold transition-colors">Gifts</Link></li>
-              <li><Link to="/collections/all?sort=bestselling" className="hover:text-gold transition-colors">Bestsellers</Link></li>
-              <li><Link to="/collections/all?sort=new" className="hover:text-gold transition-colors">New Arrivals</Link></li>
+              <li><Link to="/collections/all" className="hover:text-gold transition-colors">Shop All</Link></li>
+              <li><Link to="/collections/new-arrivals" className="hover:text-gold transition-colors">New Arrivals</Link></li>
+              <li><Link to="/collections/gifts" className="hover:text-gold transition-colors">Gifts & Combos</Link></li>
+              <li><Link to="/collections/cookies" className="hover:text-gold transition-colors">Cookies</Link></li>
+              <li><Link to="/blog" className="hover:text-gold transition-colors">Bakery Blog</Link></li>
             </ul>
           </div>
 
-          {/* Info Col */}
+          {/* Support Col */}
           <div>
-            <h3 className="font-syne font-bold text-lg text-white mb-6">Info</h3>
+            <h3 className="font-syne font-bold text-lg text-white mb-6">Support</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="/#about" className="hover:text-gold transition-colors">About Us</a></li>
-              <li><a href="/#how-to-order" className="hover:text-gold transition-colors">How to Order</a></li>
-              <li><a href="/#delivery-info" className="hover:text-gold transition-colors">Delivery Info</a></li>
-              <li><a href="/#contact" className="hover:text-gold transition-colors">Contact Us</a></li>
+              <li><Link to="/about" className="hover:text-gold transition-colors">About Bite Bills</Link></li>
+              <li><Link to="/delivery-info" className="hover:text-gold transition-colors">Delivery Info</Link></li>
+              <li><Link to="/contact" className="hover:text-gold transition-colors">Contact Us</Link></li>
+              <li><Link to="/help" className="hover:text-gold transition-colors">Help & Support</Link></li>
+              <li><Link to="/security" className="hover:text-gold transition-colors">Security</Link></li>
             </ul>
           </div>
 
-          {/* Contact Col */}
+          {/* Legal Col */}
           <div>
-            <h3 className="font-syne font-bold text-lg text-white mb-6">Contact</h3>
-            <ul className="space-y-4 text-sm">
-              <li className="flex items-start gap-3">
-                <span className="text-xl">📞</span>
-                <span>{BUSINESS_CONFIG.phone}</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-xl">💬</span>
-                <a href={BUSINESS_CONFIG.socials.whatsapp} className="hover:text-[#25D366] underline underline-offset-4 decoration-white/30">WhatsApp Us</a>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-xl">📍</span>
-                <span>{BUSINESS_CONFIG.address}</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-xl">⏰</span>
-                <span>Open: 9am – 9pm daily</span>
-              </li>
+            <h3 className="font-syne font-bold text-lg text-white mb-6">Legal</h3>
+            <ul className="space-y-3 text-sm">
+              <li><Link to="/terms" className="hover:text-gold transition-colors">Terms of Service</Link></li>
+              <li><Link to="/privacy" className="hover:text-gold transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/refund-policy" className="hover:text-gold transition-colors">Refund Policy</Link></li>
+              <li><Link to="/login" className="hover:text-gold transition-colors">Customer Login</Link></li>
+              <li><Link to="/admin" className="hover:text-gold transition-colors text-white/10 italic">Internal</Link></li>
             </ul>
           </div>
         </div>
