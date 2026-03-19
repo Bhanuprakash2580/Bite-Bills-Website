@@ -11,8 +11,8 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Nandipet’s Favorite Bakery | Fresh Eggless Cakes & Cookies</title>
-        <meta name="description" content="Nandipet’s favorite destination for premium eggless cakes and hand-crafted cookies. Baked fresh on order in Nizamabad." />
+        <title>Our Bakery’s Favorite Bakery | Fresh Eggless Cakes & Cookies</title>
+        <meta name="description" content="Our Bakery’s favorite destination for premium eggless cakes and hand-crafted cookies. Baked fresh on order in Nizamabad." />
         <script type="application/ld+json">
           {`
             {

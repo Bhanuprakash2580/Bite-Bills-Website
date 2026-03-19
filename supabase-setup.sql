@@ -1,4 +1,4 @@
--- Supabase SQL Setup for Nandipet’s Favorite Bakery
+-- Supabase SQL Setup for Our Bakery’s Favorite Bakery
 -- Run this in your Supabase SQL Editor to create the database tables
 
 -- Enable UUID extension

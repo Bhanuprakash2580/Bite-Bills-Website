@@ -27,7 +27,7 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-bold text-white uppercase tracking-wider">Third Parties</h2>
             <p>We use Razorpay for payments and Supabase for cloud storage. These partners are compliant with global security standards. We NEVER sell or trade your data.</p>
 
-            <p className="text-xs italic pt-12 border-t border-white/10 opacity-50">Last updated: March 2024 | Bite Bills Nandipet</p>
+            <p className="text-xs italic pt-12 border-t border-white/10 opacity-50">Last updated: March 2024 | Bite Bills Our Bakery</p>
           </div>
         </div>
       </main>

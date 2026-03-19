@@ -12,7 +12,7 @@ const posts = [
   },
   {
     id: 2,
-    title: "How we bake fresh daily in Nandipet",
+    title: "How we bake fresh daily locally",
     excerpt: "A behind-the-scenes look at our early morning rituals, from kneading dough to the first warm batches...",
     date: "Mar 10, 2024",
     image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop"
@@ -31,7 +31,7 @@ export default function BlogPage() {
     <>
       <Helmet>
         <title>Bakery Blog | Bite Bills</title>
-        <meta name="description" content="Tips, recipes, and stories from Nandipet’s Favorite Bakery." />
+        <meta name="description" content="Tips, recipes, and stories from Our Bakery’s Favorite Bakery." />
       </Helmet>
 
       <main className="bg-darkBg min-h-screen pt-28 pb-24 text-softWhite">

@@ -15,7 +15,7 @@ export default function WhyBiteBills() {
             <h2 className="text-4xl md:text-5xl font-syne font-bold mb-6">
               Why Choose Us?
             </h2>
-            <p className="text-xl text-gold font-bold mb-8 italic">Nandipet’s Favorite Bakery</p>
+            <p className="text-xl text-gold font-bold mb-8 italic">Our Bakery’s Favorite Bakery</p>
             <div className="space-y-8">
               <div>
                 <h4 className="text-xl font-syne font-bold text-choco mb-2">1. Baked Fresh on Order</h4>

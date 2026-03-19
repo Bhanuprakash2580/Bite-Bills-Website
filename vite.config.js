@@ -13,9 +13,9 @@ export default defineConfig({
       },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Nandipet’s Favorite Bakery',
-        short_name: 'NandipetFav',
-        description: 'Fresh eggless cakes and cookies in Nandipet',
+        name: 'Our Bakery’s Favorite Bakery',
+        short_name: 'Our BakeryFav',
+        description: 'Fresh eggless cakes and cookies locally',
         theme_color: '#1A0F0A',
         background_color: '#FFF8F2',
         display: 'standalone',

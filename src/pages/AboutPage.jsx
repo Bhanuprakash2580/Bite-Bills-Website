@@ -6,7 +6,7 @@ export default function AboutPage() {
     <>
       <Helmet>
         <title>Our Story | Bite Bills</title>
-        <meta name="description" content="Discover the story behind Nandipet’s Favorite Bakery." />
+        <meta name="description" content="Discover the story behind Our Bakery’s Favorite Bakery." />
       </Helmet>
 
       <main className="bg-darkBg min-h-screen pt-28 pb-24 text-softWhite">
@@ -16,7 +16,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <h1 className="text-4xl md:text-6xl font-syne font-bold mb-6 text-gold">Baked with Love in Nandipet ❤️</h1>
+            <h1 className="text-4xl md:text-6xl font-syne font-bold mb-6 text-gold">Baked with Love locally ❤️</h1>
             <p className="text-xl text-white/70 leading-relaxed font-medium capitalize prose prose-invert">
               A journey of thousand cookies started with a single bowl of dough.
             </p>
@@ -26,7 +26,7 @@ export default function AboutPage() {
             <section>
               <h2 className="text-2xl font-syne font-bold text-white mb-4 italic">The Beginning</h2>
               <p>
-                Bite Bills started in a small home kitchen in 2023 with one simple goal: to create the perfect eggless cookie that doesn't compromise on taste or texture. What began as a passionate hobby quickly turned into Nandipet's favorite destination for sweet treats.
+                Bite Bills started in a small home kitchen in 2023 with one simple goal: to create the perfect eggless cookie that doesn't compromise on taste or texture. What began as a passionate hobby quickly turned into Bite Bills destination for sweet treats.
               </p>
             </section>
 
@@ -65,7 +65,7 @@ export default function AboutPage() {
                   <span className="text-2xl">📍</span>
                   <div>
                     <h3 className="font-bold text-white">Truly Local</h3>
-                    <p className="text-sm">Proudly rooted in Nandipet. We serve our neighbors first.</p>
+                    <p className="text-sm">Proudly rooted locally. We serve our neighbors first.</p>
                   </div>
                 </li>
               </ul>

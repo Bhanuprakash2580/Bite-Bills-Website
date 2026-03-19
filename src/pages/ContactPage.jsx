@@ -48,7 +48,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Our Location</h3>
                   <p className="text-white/60 leading-relaxed">
-                    Main Road, Nandipet Town<br/>
+                    Main Road, City Limits<br/>
                     Nizamabad District, Telangana 503212
                   </p>
                 </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
                 <div className="absolute inset-0 flex items-center justify-center text-center p-8">
                   <div className="space-y-4">
                     <FaMapMarkerAlt className="w-12 h-12 text-gold mx-auto opacity-50" />
-                    <p className="text-white/40 font-medium">Map currently loading or offline.<br/>Visit us at Main Road, Nandipet.</p>
+                    <p className="text-white/40 font-medium">Map currently loading or offline.<br/>Visit us at Main Road, Our Bakery.</p>
                   </div>
                 </div>
                 {/* Embed map if needed */}

@@ -24,7 +24,7 @@ export default function DeliveryPage() {
                 <span>📍</span> Delivery Zones
               </h2>
               <ul className="space-y-3 text-white/70">
-                <li className="flex justify-between"><span>Nandipet Town</span> <span className="text-gold font-bold">Free</span></li>
+                <li className="flex justify-between"><span>City Limits</span> <span className="text-gold font-bold">Free</span></li>
                 <li className="flex justify-between"><span>Within 5km</span> <span className="text-gold font-bold">₹20</span></li>
                 <li className="flex justify-between"><span>5-15km</span> <span className="text-gold font-bold">₹50</span></li>
                 <li className="flex justify-between"><span>Nizamabad City</span> <span className="text-gold font-bold">₹100</span></li>
@@ -53,7 +53,7 @@ export default function DeliveryPage() {
             <div className="bg-gold/5 border-l-4 border-gold p-6 rounded-r-xl">
                 <h4 className="text-gold font-bold mb-2">Self Pick-Up</h4>
                 <p className="text-sm text-white/80">
-                  Prefer to skip the delivery charge? Select <strong>Pick Up</strong> at checkout and collect your order from our kitchen in Nandipet. We'll WhatsApp you once your order is ready!
+                  Prefer to skip the delivery charge? Select <strong>Pick Up</strong> at checkout and collect your order from our kitchen locally. We'll WhatsApp you once your order is ready!
                 </p>
             </div>
           </section>

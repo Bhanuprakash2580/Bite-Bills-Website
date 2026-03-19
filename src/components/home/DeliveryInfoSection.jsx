@@ -34,13 +34,13 @@ export default function DeliveryInfoSection() {
           Fresh Delivery to Your Door 🚚
         </h2>
         <p className="text-lg text-white/70 mb-12">
-          Baked fresh when you order. Delivered straight to your doorstep across Nandipet.
+          Baked fresh when you order. Delivered straight to your doorstep across Our Bakery.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           <div className="bg-darkBg2 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition-colors">
             <div className="text-3xl mb-3">📍</div>
-            <h4 className="font-syne font-bold text-lg text-cream mb-1">Nandipet Town</h4>
+            <h4 className="font-syne font-bold text-lg text-cream mb-1">City Limits</h4>
             <p className="text-gold font-bold">FREE Delivery</p>
           </div>
           <div className="bg-darkBg2 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition-colors">

@@ -12,7 +12,7 @@ export default function GiftsPage() {
     <>
       <Helmet>
         <title>Gift Boxes | Bite Bills</title>
-        <meta name="description" content="Send the perfect gift with a customizable box of Nandipet’s Favorite treats." />
+        <meta name="description" content="Send the perfect gift with a customizable box of Our Bakery’s Favorite treats." />
       </Helmet>
 
       <main className="bg-darkBg min-h-screen pt-28 pb-24 text-softWhite">

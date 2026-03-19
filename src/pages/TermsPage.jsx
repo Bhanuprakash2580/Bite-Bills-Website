@@ -16,7 +16,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-xl font-bold text-white mb-4">1. Freshness Guarantee</h2>
-              <p>We bake strictly on order. While we aim for perfection, slight variations in appearance may occur as all products are handcrafted in our Nandipet kitchen.</p>
+              <p>We bake strictly on order. While we aim for perfection, slight variations in appearance may occur as all products are handcrafted in our local kitchen.</p>
             </section>
 
             <section>
