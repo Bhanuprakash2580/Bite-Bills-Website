@@ -1,6 +1,6 @@
-# Supabase Setup for Bite Bills Bakery
+# Supabase Setup for Bite Bills | Luxury You Can Taste
 
-This guide will help you set up Supabase as the database for your Bite Bills bakery website.
+This guide will help you set up Supabase as the database for your Bite Bills | Luxury You Can Taste website.
 
 ## Step 1: Create a Supabase Project
 

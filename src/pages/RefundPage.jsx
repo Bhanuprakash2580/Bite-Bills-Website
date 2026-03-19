@@ -32,7 +32,7 @@ export default function RefundPage() {
               <p>To request a refund, please send a photo of the product to our WhatsApp (+91 7288039532) within 1 hour of receiving it. Once approved, refunds are processed back to the original payment method within 5-7 business days.</p>
             </section>
 
-            <p className="text-sm opacity-50 italic pt-12 font-medium">Bite Bills — Bite Bills Bakery</p>
+            <p className="text-sm opacity-50 italic pt-12 font-medium">Bite Bills — Bite Bills | Luxury You Can Taste</p>
           </div>
         </div>
       </main>
